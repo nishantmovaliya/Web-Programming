@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Practical 13</title>
+<style>
+    body{background-color: blueviolet;
+    color: white;}
+button{
+height:60px;
+width: 60px;
+font-size:30px;
+}
+input[type="text"]{
+height:50px;
+width: 180px;
+font-size:30px;
+}
+button{border-radius: 5px; color: purple;}
+</style>
+</head>
+<body>
+    <center>
+    <h1>Calculator</h1>
+<table>
+<tr>
+<td><button onclick="clr()">clr</button></td>
+<td colspan="3"><input type="text" id="dis" disabled><br></td>
+</tr>
+<tr>
+<td><button onclick="clik('+')">+</button></td>
+<td><button onclick="clik('1')">1</button></td>
+<td><button onclick="clik('2')">2</button></td>
+<td><button onclick="clik('3')">3</button></td>
+</tr>
+<tr>
+<td><button onclick="clik('-')">-</button></td>
+<td><button onclick="clik('4')">4</button></td>
+<td><button onclick="clik('5')">5</button></td>
+<td><button onclick="clik('6')">6</button></td>
+</tr>
+<tr>
+<td><button onclick="clik('*')">*</button></td>
+<td><button onclick="clik('7')">7</button></td>
+<td><button onclick="clik('8')">8</button></td>
+<td><button onclick="clik('9')">9</button></td>
+</tr>
+<tr>
+<td><button onclick="clik('/')">/</button></td>
+<td><button onclick="clik('0')">0</button></td>
+<td><button onclick="clik('10')">10</button></td>
+<td><button onclick="sol()">=</button></td>
+</tr>
+</table>
+</center>
+<script>
+function clik(val){
+document.getElementById("dis").value += val;
+}
+function clr(){
+document.getElementById("dis").value = "";
+}
+function sol(){
+var data = document.getElementById("dis").value;
+var ans = eval(data);
+document.getElementById("dis").value = ans;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body {
+  background: linear-gradient(90deg, rgb(12, 214, 204), blue);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.frm {
+  height: 300px;
+  width: 300px;
+  border: 2px solid white;
+  padding: 20px;
+  background: linear-gradient(90deg, #9e1e64, #420ca5);
+  border-radius: 10px;
+}
+.bt {
+  padding: 5px;
+  background: linear-gradient(56deg, rgb(12, 214, 204), blue);
+  color: white;
+  border-radius: 4px;
+  border: 2px solid white;
+  padding-inline: 20px;
+}
+.bt:hover {
+  background: linear-gradient(56deg, blue, rgb(12, 214, 204));
+}
+input {
+  border-radius: 5px;
+}
+form {
+  padding: 10px;
+}
+.lnk{color: white;}

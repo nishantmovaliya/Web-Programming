@@ -1,0 +1,59 @@
+
+            body{
+                background: linear-gradient(90deg,#FF512F,#DD2476);
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .block{
+                margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: transparent;
+            }
+            .menu ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: transparent;
+                }
+                
+            .menu li{
+                float: left;
+                padding: 20px;
+            }
+            .menu li:hover{
+                background: linear-gradient(57deg,#f14492,#f8765c);
+                background-color: white;
+                text-decoration: none;
+                border-radius: 8px;
+            }
+            .menu a{
+                text-decoration: none;
+                color: white;
+            }
+        
+            .tball table{
+                border: 1px solid white;
+                border-radius: 5px;
+                padding: 15px;
+                background: linear-gradient(57deg,#C33764 , #1D2671);
+        
+            }
+            .tball td{
+                padding-inline-end: 10px;
+            }
+            .fname{
+                font-size: 20px;
+                font-weight: bold;
+            }
+        .li1{
+            float: left;padding-left: 15%; padding-top: 1%;
+        }
+        .li2{
+            float: right;padding-right: 20%; padding-top:0%;
+        }
+        h1{
+            text-shadow: 2px 2px 3px #000000;
+        }
+        

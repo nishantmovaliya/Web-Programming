@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Practical 16</title>
+<style>
+    body{background-color: dodgerblue;}
+</style>
+</head>
+<body>
+<div style="margin-top:20%; font-size: 20px;">
+<center>
+<form onsubmit="return onConfirm()" target="_blank" id="myform">
+<table>
+<tr>
+<td><label for="name">Enter name: </label></td>
+<td><input type="text" name="name" id="name"><br></td>
+</tr>
+<tr>
+<td><label for="age">Enter age: </label></td>
+<td><input type="number" name="" id="age" name="age"><br></td>
+</tr>
+<tr>
+<td><label for="mno">Enter Mobile No.:</label></td>
+<td><input type="tel" name="mno" id="mno" onkeypress="return isNum(event)"><br></td>
+</tr>
+<tr style="border: 1px solid red;">
+<td colspan="2" style="textalign: center;"><input type="submit" value="Submit"></td>
+</tr>
+</table>
+</form>
+</center>
+</div>
+<script>
+function isNum(event) {
+var msg = document.getElementById('mno').value;
+var keycode = (event.which) ? event.which : event.keycode
+if (keycode != 46 && keycode > 31 && (keycode < 48 || keycode > 57)) {
+alert("mobile number can accept only digits");
+return false;
+} else {
+return true;
+}
+return true;
+}
+function onConfirm() {
+var name = document.getElementById('myform').elements[0].value;
+var age = document.getElementById('myform').elements[1].value;
+var mobile = document.getElementById('myform').elements[2].value;
+var regex = /^[a-zA-Z]+$/;
+var regexMobile = /^([+]\d{2})?\d{10}$/;
+var regexage = /^(0?[1-9]|[1-9][0-9]|[1][0-9][0-9]|200)$/;
+if (name == "") {
+window.alert("Please enter your name");
+document.getElementById("name").focus();
+return false;
+}
+if (age == "") {
+window.alert("Please enter your age");
+document.getElementById("age").focus();
+return false;
+}
+if (mobile == "") {
+window.alert("Please enter your mobile");
+document.getElementById("mno").focus();
+return false;
+}
+if (regex.test(name) == false) {
+alert("Name must be in alphabets only");
+document.getElementById("name").focus();
+return false;
+}
+if (regexage.test(age) == false) {
+window.alert("Please enter your valid age");
+document.getElementById("age").focus();
+return false;
+}
+if (regexMobile.test(mobile) == false){
+alert("Please enter valid mobile number");
+document.getElementById("mno").focus();
+return false;
+}
+return true;
+}
+</script>
+</body>
+</html>

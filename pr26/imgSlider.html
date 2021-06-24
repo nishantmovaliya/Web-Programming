@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JQuery Slider</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/fontawesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body{
+        font-family: helvetica;
+        background:linear-gradient(90deg,#0af5a6,#079afc);
+        
+      }
+      #slider {
+        width: 70%;
+        height: 500px;
+        margin: 20px auto;
+        position: relative;
+      }
+      div#slider {
+        overflow: hidden;
+        border: 5px solid white;
+        border-radius: 20px;
+      }
+      div#slider figure img {
+        width: 20%;
+        height: 100%;
+        float: left;
+      }
+      div#slider figure {
+        position: relative;
+        width: 500%;
+        height: 100%;
+        margin: 0;
+        left: 0;
+        transition: 1s ease-in-out;
+      }
+      .btn-next,
+      .btn-prev {
+        position: absolute;
+        top: 45%;
+        cursor: pointer;
+        color: white;
+        background-color: #ccc;
+        border: none;
+      }
+      .btn-prev {
+        left: 0px;
+        border-radius: 0 50% 50% 0;
+      }
+      .btn-next {
+        right: 0px;
+        border-radius: 50% 0 0 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1 style="color: white">JQuery Slider</h1>
+    </center>
+    <div id="slider">
+      <figure>
+        <img src="1.jpg" width="100%" height="100%" />
+        <img src="2.jpg" width="100%" height="100%" />
+        <img src="3.jpg" width="100%" height="100%" />
+        <img src="4.jpg" width="100%" height="100%" />
+        <img src="5.jpg" width="100%" height="100%" />
+      </figure>
+      <button class="btn-prev">
+        <img
+          src="https://img.icons8.com/color/48/000000/double-left--v2.png"
+          style="width: 30px; margin-top: 5px"
+        />
+      </button>
+      <button class="btn-next">
+        <img
+          src="https://img.icons8.com/color/48/000000/double-right--v2.png"
+          style="width: 30px; margin-top: 5px"
+        />
+      </button>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var x = 0;
+        // for next slide
+        $(".btn-next").click(function () {
+          x = x <= 300 ? x + 100 : 0;
+          $("figure").css("left", -x + "%");
+        });
+        // for prev slide
+        $(".btn-prev").click(function () {
+          x = x >= 100 ? x - 100 : 400;
+          $("figure").css("left", -x + "%");
+        });
+      });
+    </script>
+  </body>
+</html>

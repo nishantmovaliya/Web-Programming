@@ -1,0 +1,51 @@
+h1{
+    display: inline;
+    font-size: 2em;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.fname{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.facilities-text{
+    font-size: 130%;
+}
+body{
+    background-color: rgb(115, 253, 210);
+
+}
+.heading{}
+.bbg{
+    background-color: rgb(83, 245, 191);
+}
+.navigation{
+    font-size: 170%;
+    background: rgb(3, 250, 168);
+}
+.logograimg{
+}
+.gec-text{
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+
+}
+.centerCimg{
+    margin: auto;
+    width: 51%;
+    padding: 10px;
+
+}
+.center {
+    margin: auto;
+    width: 73%;
+    padding: 10px;
+}
+header{
+    background:rgb(3, 252, 152);
+}

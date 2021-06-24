@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Practical 23</title>
+</head>
+<body>
+<h1 id="show"></h1>
+<button onclick="dislay();"> Show data</button>
+<script>
+function dislay(){
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function(){
+if(this.readyState == 4 && this.status == 200){
+document.getElementById("show").innerHTML = this.responseText;
+}
+};
+xhttp.open("GET","data.txt",true);
+xhttp.send();
+}
+</script>
+</body>
+</html>

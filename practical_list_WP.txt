@@ -1,0 +1,34 @@
+1. Study of WWW, HTTP Request and Response Protocol. List Good features of User-Friendly websites.
+
+2. Design Information Technology Department web pages containing a description of the Subjects/Syllabus, faculties, Facilities etc... (Use Various HTML Tags).
+3. Design Class Time Table in HTML.
+4. Create a HTML page as given below:
+5. Design Registration page in HTML. (Includes following field Name, Email, Mobile No., Date of Birth, Gender, Address, City, Hobbies, Image Upload).
+6. Program to Demonstrate Frames & Frameset in HTML5.
+7. Write Program to Demonstrate Audio and Video tags in HTML5.
+8. Introduction to CSS. Demonstrate types of CSS with example.
+9. Demonstrate the following attributes using CSS.
+•	Color and Background 
+•	Font 
+•	Text 
+•	Border 
+•	Margin and list
+10. Create a Picture Book using HTML & External CSS.
+11. Design a web page of your home town with an attractive background colour, text, images, fontsetc, Using Internal CSS only.
+12. Write a program to print date using javascript.
+13. Write a program to create a simple calculator using javascript.
+14. Write a program to show use of alert, confirm and prompt box.
+15. Write a program to validate HTML form data using JavaScript. (Name, Age, Mobile No).
+16. Write a program to validate practical-15’s HTML form using regular expression in JavaScript.
+17. Write a PHP script to display today's date in dd-mm-yyyy format.
+18. Write a PHP script to check if the number is prime or not.
+19. Write a PHP script to print the first 10 Fibonacci Numbers.
+20. Create HTML page that contain textbox, submit / reset button. Write a PHP script to display this information and also store into a text file.
+21. Create Login Page with HTML, PHP &MySql. (On Successful login it should display a successful message or in case of failure it should display an unsuccessful message.)
+22. Display Students list (Name, Enrolment No, Branch and Email Address) and demonstrate Add, Update and Delete (CRUD) functionality using HTML, PHP &MySql.
+23. Using ajax retrieve data from a TEXT file and display it.
+24. Using ajax Retrieve customer information from the database and display it.
+25. Create a Navigation Menu/Bar using JQuery.
+26. Create Image slider using JQuery.
+27. Using ajax retrieve data from Database and display it.
+

@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Registartion Form</title>
+        <style>
+            div{
+                margin-bottom: 15px;
+            }
+            body{
+                background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+            }
+            
+            .button{background: linear-gradient(45deg, #df0e3c,  #3c56e7);color: white;
+                border-radius: 4px; padding: 10px 25px; border-color: white;}
+            form input,textarea{ border-radius: 4px; border-color: white; }
+            form{text-align: center;}
+            table td{padding: 10px;}
+        </style>
+    </head>
+    <body>
+        <h1 align="center" style="color:white;background:black; border-radius: 10px; padding: 7px;">Registration Form</h1>
+        <form action="" method="POST">
+            <fieldset style="border-radius: 4px; border: 2px solid gold;">
+                <legend style="text-align: left; ">Registartion Form:</legend>
+                <table align="center">
+            <tr>
+            <div>
+                <td><label for="username">Name : </label></td>
+                <td><input type="text" name="username" ></td>
+            </div>
+        </tr>
+            <tr>
+            <div>
+               <td> <label for="email">Email Id :</label></td>
+                <td><input type="email" name="email"></td>
+            </div>
+        </tr>
+        <tr>
+            <div>
+                <td><label for="mobile">Mobile No. :</label></td>
+            <td><input type="tel" name="mobile"></td>
+            </div></tr>
+            <div>
+            <td><label for="dateofbirth">Select Birth Date :</label></td>
+            <td><input type="date" name="dateofbirth"></td>
+            </div></tr>
+        <tr>
+            <div>
+            <td><label for="gender">Gender :</label></td>
+        <td><input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="other">Other </td>
+            </div></tr>
+            <div>
+            <td><label for="address">Address :</label>
+            <td> <textarea cols="20" rows="4" style="vertical-align: top;"></textarea></td><br><br>
+            <tr>
+            <td> <label for="city">City :</label></td>
+            <td><input type="city" name="city"></td></tr>
+            </div>
+        <tr><div>
+        <td> <label for="hobby">Hobby :</label></div></td>
+            <td><input type="checkbox" name="reading">Reading
+                <input type="checkbox" name="cricket">Cricket
+                <input type="checkbox" name="yoga">Yoga
+                <input type="checkbox" name="programming">Programming
+                <input type="checkbox" name="travelling">Travelling
+            </td>
+            </div></tr>
+            <tr><div>
+            <td><label for="imgupload">Upload a Image : </label></td>
+        <td><input type="file" name="imgupload"></td>
+            </div></tr><br>
+        <tr><div >
+                <td><input type="submit" name="submit" value="Submit" class="button"></td>
+            <td><input type="reset" name="reset" value="Reset" class="button"></td>
+            </div></tr>
+            </table>
+        </fieldset>
+        </form>
+    </body>
+</html>

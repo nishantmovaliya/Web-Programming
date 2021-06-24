@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Practical 9</title>
+    <style>
+      .std {
+        height: 175px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body style="background-color: palevioletred;">
+    <div style="float: left">
+      <h1>Color and background</h1>
+      <table class="std">
+        <tr>
+          <td style="border: 1px solid; border-color: blue">border color</td>
+          <td style="background-color: aqua">background color</td>
+          <td style="color: cadetblue">Text color</td>
+        </tr>
+        <tr>
+          <td style="background-color: rebeccapurple">background color</td>
+          <td style="backgroundcolor: rebeccapurple; opacity: 0.5">
+            background color with low opacity
+          </td>
+          <td style=" background: url('01.jpg');background-repeat: norepeat;background-size: contain;">
+            background img
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div style="float: left; margin-left: 20px">
+      <h1>Font</h1>
+      <div style="float: left; margin-left: 1px">
+        <table>
+          <h3>Font family</h3>
+          <tr>
+            <td style="font-family: serif">This is serif</td>
+          </tr>
+          <tr>
+            <td
+              style="
+                fontfamily: 'Lucida Sans', 'Lucida Sans Regular',
+                  'Lucida Grande', 'Lucida Sans Unicode';
+              "
+            >
+              This is luscida
+            </td>
+          </tr>
+          <tr>
+            <td style="font-family: Arial, Helvetica, sansserif">
+              This is Arial
+            </td>
+          </tr>
+          <tr>
+            <td style="fontfamily: 'Times New Roman', Times, serif">
+              Times new Roman
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div style="float: left; margin-left: 1px">
+        <table style="border: 1px solid black; border-collapse: collapse">
+          <h3>Font: Style, Weight and varient</h3>
+          <tr>
+            <th>Style</th>
+            <th>Weight</th>
+            <th>Varient</th>
+          </tr>
+          <tr>
+            <td style="font-style: normal; border: 1px solid black">normal</td>
+            <td style="font-weight: normal; border: 1px solid black">normal</td>
+            <td style="fontvariant: normal; border: 1px solid black">normal</td>
+          </tr>
+          <tr>
+            <td style="font-style: italic; border: 1px solid black">italic</td>
+            <td style="font-weight: bold; border: 1px solid black">Bold</td>
+            <td style="font-variant: small-caps; border: 1px solid black">
+              smallcaps
+            </td>
+          </tr>
+          <tr>
+            <td style="font-style: oblique; border: 1px solid black">
+              oblique
+            </td>
+            <td style="font-style: oblique; border: 1px solid black"></td>
+            <td style="font-style: oblique; border: 1px solid black"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div style="float: left; margin-left: 20px">
+      <div style="float: left; margin-left: 1px">
+        <h1>Text</h1>
+        <h3>Text Color</h3>
+        <table>
+          <tr height="50px" style="border: 1px solid black">
+            <th width="100px" style="color: red; border: 1px solid black">
+              Text co lor
+            </th>
+            <th
+              width="100px"
+              style="backgroundcolor: red; border: 1px solid black"
+            >
+              Background color
+            </th>
+          </tr>
+        </table>
+        <h3>Text Alignment</h3>
+        <table>
+          <tr height="50px" style="border: 1px solid black">
+            <th width="80px" style="textalign: center; border: 1px solid black">
+              center
+            </th>
+            <th width="80px" style="textalign: left; border: 1px solid black">
+              left
+            </th>
+            <th width="80px" style="textalign: right; border: 1px solid black">
+              right
+            </th>
+          </tr>
+        </table>
+      </div>
+      <div style="float: left; margin-left: 1px">
+        <h3>Text Decoration</h3>
+        <table>
+          <tr height="50px" style="border: 1px solid black">
+            <th
+              width="80px"
+              style="textdecoration: overline; border: 1px solid black"
+            >
+              Overline
+            </th>
+            <th
+              width="80px"
+              style="text-decoration: linethrough; border: 1px solid black"
+            >
+              Line-through
+            </th>
+            <th
+              width="80px"
+              style="textdecoration: underline; border: 1px solid black"
+            >
+              Underline
+            </th>
+          </tr>
+        </table>
+        <h3>Text Transformation</h3>
+        <table>
+          <tr height="50px" style="border: 1px solid black">
+            <th
+              width="80px"
+              style="texttransform: capitalize; border: 1px solid black"
+            >
+              capitalize
+            </th>
+            <th
+              width="80px"
+              style="texttransform: uppercase; border: 1px solid black"
+            >
+              uppercase
+            </th>
+            <th
+              width="80px"
+              style="texttransform: lowercase; border: 1px solid black"
+            >
+              lowercase
+            </th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div style="float: left; margin-left: 1px; margin-top: 1px">
+      <h1>Border</h1>
+      <h3>Border Style</h3>
+      <table>
+        <tr height="50px" style="border: 1px solid black">
+          <th width="100px" style="border: 3px solid black">Solid</th>
+          <th width="100px" style="border: 3px dotted black">Dotted</th>
+          <th width="100px" style="border: 3px double black">Double</th>
+        </tr>
+      </table>
+      <h3>Border Color and Width</h3>
+      <table>
+        <tr height="50px" style="border: 1px solid black">
+          <th width="100px" style="border: 2px solid red">Solid</th>
+          <th width="100px" style="border: 4px solid blue">Dotted</th>
+          <th width="100px" style="border: 6px solid black">Double</th>
+        </tr>
+      </table>
+    </div>
+    <div style="float: left; margin-left: 20px; margin-top: 1px">
+      <h1>Margin and list</h1>
+      <div style="float: left; margin-left: 1px">
+        <h3>Margin</h3>
+        <table>
+          <tr height="100px" style="border: 1px solid black">
+            <th width="90px" style="border: 1px solid black">
+              <p style="margin-top: 40px">top</p>
+            </th>
+            <th width="90px" style="border: 1px solid black">
+              <p style="margin-bottom: 40px">bottom</p>
+            </th>
+            <th width="90px" style="border: 1px solid black">
+              <p style="margin-left: 40px">left</p>
+            </th>
+            <th width="90px" style="border: 1px solid black">
+              <p style="margin-right: 40px">right</p>
+            </th>
+          </tr>
+        </table>
+      </div>
+      <div style="float: left; margin-left: 10px">
+        <h3>List</h3>
+        <div
+          style="float: left;border: 1px solid black;marginleft: 1px;padding: 5px;">
+          <h5>Unordered List</h5>
+          <ul type="circle">
+            <li>Circle</li>
+          </ul>
+          <ul type="disc">
+            <li>disc</li>
+          </ul>
+          <ul type="square">
+            <li>square</li>
+          </ul>
+        </div>
+        <div
+          style="float: left;border: 1px solid black;marginleft: 1px; padding: 5px;">
+          <h5>Ordered List</h5>
+          <ol type="1">
+            <li>1</li>
+          </ol>
+          <ol type="i">
+            <li>i</li>
+          </ol>
+          <ol type="A">
+            <li>A</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

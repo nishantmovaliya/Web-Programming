@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Operations</title>
+    <style>
+        body{
+            background: linear-gradient(90deg, #9e1e64, #420ca5); text-align: center;
+            color: white;}
+    </style>
+</head>
+<body>
+    <h3>Display data</h3>
+    <form action="display.php" method="post">
+        <input type="submit" value="Show data" name="display">
+    </form>
+    <h3>Insert Operations</h3>
+    <form action="insert.php" method="post">
+       
+        ENROLL_NO: <input type="text" name="ENROLL_NO"><br><br>
+        NAME: <input type="text" name="NAME"><br><br>
+        BRANCH: <input type="text" name="BRANCH"><br><br>
+        EMAIL: <input type="text" name="EMAIL"><br><br>
+        <input type="submit" value="Insert" name="insert">
+    </form>
+    <br>
+    <h3>Update Operations</h3>
+    <form action="update.php" method="post">
+        ID: <input type="number" name="id"><br><br>
+        ENROLL_NO: <input type="text" name="ENROLL_NO"><br><br>
+        NAME: <input type="text" name="NAME"><br><br>
+        BRANCH: <input type="text" name="BRANCH"><br><br>
+        EMAIL: <input type="text" name="EMAIL"><br><br>
+        <input type="submit" value="Update" name="update"><br> 
+    </form>
+    <br>
+    <h3>Delete Operations</h3>
+    <form action="delete.php" method="post">
+        ID: <input type="number" name="id"><br><br>
+        <input type="submit" value="Delete" name="delete">
+    </form>
+</body>
+</html>
